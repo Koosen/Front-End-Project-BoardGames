@@ -1,38 +1,301 @@
-.App {
-  text-align: center;
+/* 
+gunmetal = #293241
+bdazzled blue = #3d5a80
+pale cerulean = #98c1d9
+light cyan = #e0fbfc
+burnt sienna = #ee6c4d
+*/
+
+body {
+  font-family: "Aldrich";
+  background-color: #e0fbfc;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Menu {
+  height: 100px;
+  width: auto;
+  background-color: #3d5a80;
+  box-shadow: 0px 5px #293241;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.LogoText {
+  position: absolute;
+  top: 50px;
+  left: 25%;
+  transform: translate(-100%, -120%);
+  color: #36382e;
+  font-size: 60px;
+  font-family: "Aldrich";
+  text-shadow: 1px 2px #ee6c4d;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.SearchTextHidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.SearchBox {
+  position: absolute;
+  top: 50px;
+  left: 75%;
+  transform: translate(-100%, -50%);
+  background-color: #36382e;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.SearchBox:hover .SearchText {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.SearchBox:hover .SearchButton {
+  color: #36382e;
+  background: #ee6c4d;
+}
+
+.SearchButton {
+  color: #ee6c4d;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 40px;
+  background: #36382e;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  transition: 0.5s;
 }
 
-.App-link {
-  color: #61dafb;
+.SearchText {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: #fcfcfc;
+  font-size: 16px;
+  transition: 0.5s;
+  line-height: 40px;
+  width: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.HomeIcon {
+  position: absolute;
+  top: 50px;
+  left: 75%;
+  transform: translate(120%, -50%);
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 50px;
+  color: #ee6c4d;
+  background: #36382e;
+}
+
+.HomeIcon:hover {
+  color: #36382e;
+  background: #ee6c4d;
+  transition: 0.5s;
+}
+
+.UserIcon {
+  position: absolute;
+  top: 50px;
+  left: 75%;
+  transform: translate(10%, -50%);
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ee6c4d;
+  background: #36382e;
+}
+
+.UserIcon:hover {
+  color: #36382e;
+  background: #ee6c4d;
+  transition: 0.5s;
+}
+
+.LandingBodyText {
+  width: 50%;
+  margin: auto;
+  font-family: "Aldrich";
+}
+
+.AdvancedSearchForm {
+  width: 60%;
+  margin: auto;
+  background-color: #98c1d9;
+  border-radius: 40px;
+  padding: 10px;
+  border: 2px solid #36382e;
+}
+
+.CategoryDiv {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------ Advanced Search Form - Categories - Links ------------ */
+.AdvancedSearchFormLinkText{
+  text-decoration: none;
+  border: 1px solid #293241;
+  border-radius: 20px;
+  background-color: #3d5a80;
+  color: #98c1d9;
+  padding: 3px;
+  margin: 3px;
+}
+
+.AdvancedSearchFormLinkText:hover{
+  background-color: #ee6c4d;
+  color: #293241;
+}
+
+/* ------------ Advanced Search Form - Sort and Order ------------ */
+
+.SortAndOrderDiv {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------ Advanced Search Form - Search and Submit ------------ */
+
+.SearchAndSubmitDiv {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------ Advanced Search Form - Search and Submit - Button ------------ */
+
+.SearchAndSubmitDiv button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 40px;
+  padding: 10px;
+  margin: 3px;
+  color: #ee6c4d;
+  background-color: #36382e;
+  transition: 0.5s;
+}
+
+.SearchAndSubmitDiv input {
+  height: 38px;
+  border: 1px solid #36382e;
+  border-radius: 40px;
+  width: 60%;
+}
+
+.SearchAndSubmitDiv button:hover {
+  color: #36382e;
+  background-color: #ee6c4d;
+}
+
+/* ------------- Review Title------------- */
+
+.ReviewTitle {
+  display: flex;
+  justify-content: center;
+  font-size: 64px;
+  color: #ee6c4d;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* ------------- Review Section ------------- */
+
+.ReviewSection {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  font-family: "Aldrich";
+  justify-content: center;
+}
+
+/* ------------- Review Section - Card ------------- */
+
+.ReviewCard {
+  position: relative;
+  background-size: cover;
+  text-decoration: none;
+  padding: 10rem 0 0;
+  max-width: 25ch;
+  color: #e0fbfc;
+  margin: 20px 10px;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+  overflow: hidden;
+}
+
+.ReviewCard:hover {
+  transform: scale(1.05);
+}
+
+/* ------------- Review Section - Card - Content ------------- */
+
+.ReviewCardContent {
+  left: 0;
+  bottom: 0;
+  padding: 1.5em;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.2) 10%,
+    rgba(0, 0, 0, 1)
+  );
+  transform: translateY(60%);
+  transition: transform 0.5s ease;
+  
+}
+
+.ReviewCard:hover .ReviewCardContent {
+  transform: translateY(0);
+}
+
+/* ------------- Review Section - Card - Content - Title ------------- */
+
+.ReviewCard h3 {
+  color: #ee6c4d;
+  text-shadow: 2px 2px black;
+  margin: 2px;
+}
+
+/* ------------- Review Section - Card - Content - Button ------------- */
+
+.ReviewCardButton {
+  display: flex;
+  margin: auto;
+  color: #3d5a80;
+  background-color: #293241;
+  border: none;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ReviewCardButton:hover {
+  background-color: #98c1d9;
+  color: #293241;
 }
