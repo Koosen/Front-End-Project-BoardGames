@@ -17,7 +17,7 @@ function Reviews() {
     <section>
       <h2 className="ReviewTitle">Reviews</h2>
       <AdvancedSearch/>
-      <section className="ReviewSection">
+      <section className="ReviewsSection">
       
       {reviews.map((review) => {
         return (
@@ -29,7 +29,7 @@ function Reviews() {
               <h3 className="ReviewCardTitle">{review.title}</h3>
               <h4>{`by ${review.owner}`}</h4>
               <p className="ReviewCardBodyText">{review.review_body.split(" ").slice(0, 20).join(" ")}...</p>
-                <Link className="ReviewCardButton" to={`reviews/${review.review_id}`}>
+                <Link className="ReviewCardButton" to={`Review/${review.review_id}`}>
                   <p>Read More</p>
                 </Link>
                 

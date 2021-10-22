@@ -11,16 +11,16 @@ function App() {
       <div className="AppBody">
           <MainMenu />
         <Switch>
-          <Route exact path="/Reviews">
+          <Route exact path="/reviews">
             <Reviews />
           </Route>
-          <Route exact path="/Reviews/:categories">
+          <Route exact path="/reviews/:categories">
             <Reviews />
           </Route>
-          <Route exact path="/Review/:review_id">
+          <Route exact path="/reviews/review/:review_id">
             <Review/>
           </Route>
-          <Route exact path="/Account"></Route>
+          <Route exact path="/account"></Route>
           <Route exact path="/">
             <Landing />
           </Route>

@@ -20,11 +20,13 @@ export const getReviews = async (categories) => {
 };
 
 export const getReview = async (review_id) => {
-  let path = "/review";
-  const { data } = await boardgamesApi.get(path, {
-    params: {
-      review_id: review_id,
-    },
-  });
+  let path = `/reviews/${review_id}`;
+  const { data } = await boardgamesApi.get(path);
   return data.review;
+};
+
+export const getComments = async (review_id) => {
+  let path = `/reviews/${review_id}/comments`;
+  const { data } = await boardgamesApi.get(path);
+  return data.comments;
 };

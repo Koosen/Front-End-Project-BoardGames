@@ -51,7 +51,7 @@ function AdvancedSearch() {
           <i className="fas fa-search"></i>
         </button>
         
-        <Link to="/reviews">
+        <Link to="/reviews/">
           <button type="button">
             <i className="fas fa-eye"></i>
           </button>

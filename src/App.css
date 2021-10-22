@@ -153,6 +153,14 @@ body {
   align-items: center;
 }
 
+.LikeButton{
+  border: none;
+  background-color: #3d5a80;
+  padding: 5px 10px;
+  border-radius: 20px;
+  
+}
+
 /* ------------ Advanced Search Form - Categories - Links ------------ */
 .AdvancedSearchFormLinkText{
   text-decoration: none;
@@ -160,8 +168,8 @@ body {
   border-radius: 20px;
   background-color: #3d5a80;
   color: #98c1d9;
-  padding: 3px;
-  margin: 3px;
+  padding: 2px 6px;
+  margin: 10px;
 }
 
 .AdvancedSearchFormLinkText:hover{
@@ -214,7 +222,7 @@ body {
   background-color: #ee6c4d;
 }
 
-/* ------------- Review Title------------- */
+/* ------------- Reviews Title------------- */
 
 .ReviewTitle {
   display: flex;
@@ -225,9 +233,9 @@ body {
   margin-top: 20px;
 }
 
-/* ------------- Review Section ------------- */
+/* ------------- Reviews Section ------------- */
 
-.ReviewSection {
+.ReviewsSection {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
@@ -235,7 +243,7 @@ body {
   justify-content: center;
 }
 
-/* ------------- Review Section - Card ------------- */
+/* ------------- Reviews Section - Card ------------- */
 
 .ReviewCard {
   position: relative;
@@ -254,7 +262,7 @@ body {
   transform: scale(1.05);
 }
 
-/* ------------- Review Section - Card - Content ------------- */
+/* ------------- Reviews Section - Card - Content ------------- */
 
 .ReviewCardContent {
   height: 140%;
@@ -275,7 +283,7 @@ body {
   transform: translateY(0);
 }
 
-/* ------------- Review Section - Card - Content - Title ------------- */
+/* ------------- Reviews Section - Card - Content - Title ------------- */
 
 .ReviewCard h3 {
   color: #ee6c4d;
@@ -283,7 +291,7 @@ body {
   margin: 2px;
 }
 
-/* ------------- Review Section - Card - Content - Button ------------- */
+/* ------------- Reviews Section - Card - Content - Button ------------- */
 
 .ReviewCardButton {
   display: flex;
@@ -299,4 +307,75 @@ body {
 .ReviewCardButton:hover {
   background-color: #98c1d9;
   color: #293241;
+}
+
+/* ------------- Review Section ------------- */
+
+.ReviewSection{
+  display: flex;
+  flex-direction: column;
+  margin: 50px 100px;
+  border: 1px solid #293241;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #98c1d9;
+}
+
+/* ------------- Review Section - Title Bar------------- */
+
+.ReviewSectionTitleBar{
+  height: 200px;
+  background-size: cover;
+  padding: 10px;
+}
+
+.ReviewSectionTitleBar h2{
+  color: #ee6c4d;
+  text-shadow: 2px 2px #293241;
+}
+
+.ReviewSectionTitleBar h3{
+  color: #e0fbfc;
+}
+
+.ReviewSectionTitleBar .ReviewSectionAuthor{
+  color: #98c1d9;
+}
+
+/* ------------- Review Section - Stats ------------- */
+
+.ReviewSectionStats ul{
+  list-style: none;
+  text-transform: capitalize;
+}
+
+/* ------------- Review Section - Body ------------- */
+
+.ReviewSectionBody{
+  padding:  0px 40px;
+}
+
+/* ------------- Review Section - Likes ------------- */
+.ReviewSectionLike{
+  margin: auto;
+}
+
+/* ------------- Comment Section ------------- */
+
+.ReviewSectionComments{
+  margin: 0px 100px;
+}
+
+/* ------------- Comment Section ------------- */
+
+.CommentCard{
+  border: 1px solid #293241;
+  border-radius: 20px;
+  margin: 5px 0px;
+  padding: 10px;
+  background-color: #98c1d9;
+}
+
+.CommentAuthor{
+  color: #ee6c4d;
 }
