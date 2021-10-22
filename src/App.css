@@ -257,7 +257,7 @@ body {
 /* ------------- Review Section - Card - Content ------------- */
 
 .ReviewCardContent {
-  height: 150%;
+  height: 140%;
   left: 0;
   bottom: 0;
   padding: 1.5em;
@@ -266,7 +266,7 @@ body {
     rgba(0, 0, 0, 0.2) 10%,
     rgba(0, 0, 0, 1)
   );
-  transform: translateY(60%);
+  transform: translateY(30%);
   transition: transform 0.5s ease;
   
 }
